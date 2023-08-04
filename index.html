@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- encoding -->
+    <meta charset="UTF-8" />
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and SEO -->
+    <title>Portfolio Liran Pertzovsky</title>
+    <meta name="description" content="Portfolio Liran Pertzovsky" />
+    <meta name="keywords" content="ключевые слова, фразы" />
+
+    <!-- анимация - библиотека AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- https://fancyapps.com/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Open Graph -->
+    <!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="web-layout, frontend, Liran Pertzovsky"
+    />
+    <meta
+      property="og:description"
+      content="web-layout, frontend, Liran Pertzovsky"
+    />
+    <meta property="og:image" content="./img/opengraph.jpg" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="./img/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- ********************************************************** -->
+  </head>
+  <body>
+    <header class="header">
+      <!-- Навигация -->
+      <div class="container">
+        <div class="header__wrapper">
+          <p>HTML Верстальщик</p>
+          <!-- //mobile btn -->
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li>
+                <a data-nav href="#myskills"><span>Навыки</span></a>
+              </li>
+              <li>
+                <a data-nav href="./portfolio.html"><span>Портфолио</span></a>
+              </li>
+
+              <li>
+                <a data-nav href="#mywork"><span>Как я работаю</span></a>
+              </li>
+              <li>
+                <a data-nav href="./contacts.html"><span>Контакты</span></a>
+              </li>
+            </ul>
+          </nav>
+
+          <div
+            class="header__icon"
+            data-aos="flip-left"
+            data-aos-delay="650"
+            data-aos-duration="1000"
+          >
+            <a target="_blank" href="#!">
+              <svg class="svg-ln">
+                <use href="./img/svgSprite.svg#svg-ln"></use>
+              </svg>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/liranluxury?tab=repositories"
+            >
+              <svg class="svg-github">
+                <use href="./img/svgSprite.svg#svg-github"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- вылетающий список меню -->
+          <div class="header-menu-mobile">
+            <div class="header-menu-mobile__bg"></div>
+            <!-- mobile btn -->
+            <button class="nav-icon">
+              <span class="nav-icon__middle"></span>
+            </button>
+            <!-- Навигация -->
+
+            <nav class="nav">
+              <ul class="nav-list">
+                <li>
+                  <a data-nav href="#myskills"><span>Навыки</span></a>
+                </li>
+                <li>
+                  <a data-nav href="./portfolio.html"><span>Портфолио</span></a>
+                </li>
+
+                <li>
+                  <a data-nav href="#!"><span>Как я работаю</span></a>
+                </li>
+                <li>
+                  <a data-nav href="./contacts.html"><span>Контакты</span></a>
+                </li>
+              </ul>
+              <!-- //Навигация -->
+              <div class="nav-mobile-wrapper">
+                <div class="social-wrapper">
+                  <a target="_blank" href="https://web.telegram.org/k/">
+                    <img src="./img/social-icons/telegram.svg" alt="telegram" />
+                  </a>
+                  <a target="_blank" href="https://vk.com/id223199623">
+                    <img src="./img/social-icons/vk.svg" alt="vk" />
+                  </a>
+                  <a target="_blank" href="https://www.facebook.com/">
+                    <img src="./img/social-icons/facebook.svg" alt="facebook" />
+                  </a>
+                  <a target="_blank" href="https://www.instagram.com/">
+                    <img src="./img/social-icons/instagram.svg" alt="instagram"
+                  /></a>
+                  <a target="_blank" href="#!">
+                    <img src="./img/social-icons/whatsapp.svg" alt="whatsapp" />
+                  </a>
+                </div>
+                <!-- //социальный блок -->
+                <a
+                  target="_blank"
+                  href="mailto:lirangraf@gmail.com"
+                  class="link"
+                  data-link
+                  ><span>lirangraf@gmail.com</span></a
+                >
+              </div>
+              <!-- социальный блок -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="main__content">
+        <div class="container">
+          <div class="content-row">
+            <div
+              class="main__content-describe"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
+              <div class="main__content-title">
+                <h1 class="h1 gradient-border">
+                  Лиран<br />
+                  Перцовская
+                </h1>
+              </div>
+              <div
+                class="main__content-text main__content-text-before"
+                data-aos="fade-left"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
+                <p class="text">
+                  Верстальщик сайтов, веб-разработчик. Оперативная верстка.
+                  Работаю с соблюдением сроков и выполнением ТЗ.
+                </p>
+              </div>
+              <div class="btn-wrapper">
+                <a href="#myskills" class="btn">Познакомиться</a>
+                <a href="./contacts.html" class="btn btn--light">Контакты</a>
+              </div>
+            </div>
+            <div
+              class="main__content-img"
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <img src="./img/myfoto.jpg" alt="картинка компьютера" />
+            </div>
+            <div
+              class="main__content-text main__content-text-after"
+              data-aos="flip-left"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
+              <p class="text">
+                Верстальщик сайтов, веб-разработчик. Оперативная верстка.
+                Работаю с соблюдением сроков и выполнением ТЗ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__baner">
+        <img src="./img/header/header-bg.png" alt="baner" />
+      </div>
+
+      <div class="main__skills" id="myskills">
+        <div class="container">
+          <div class="content-row content-row--skills">
+            <div
+              class="main__skills-describe"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
+              <div class="main__skills-title">
+                <p class="h3">Что я умею:</p>
+              </div>
+              <div class="main__skills-list">
+                <ul class="text">
+                  <li>pixel perfect, полное соответствие макету</li>
+                  <li>верстаю с сеткой или без</li>
+                  <li>адаптивная верстка под мобильные устройства</li>
+                  <li>оптимизация по retina экраны</li>
+                  <li>с Bootstrap и без него</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="main__skills-social"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
+              <div class="main__skills-title">
+                <p class="h3">На связи:</p>
+              </div>
+
+              <div class="social-wrapper">
+                <a target="_blank" href="https://web.telegram.org/k/">
+                  <img src="./img/social-icons/telegram.svg" alt="telegram" />
+                </a>
+                <a target="_blank" href="https://vk.com/id223199623">
+                  <img src="./img/social-icons/vk.svg" alt="vk" />
+                </a>
+                <a target="_blank" href="https://www.facebook.com/">
+                  <img src="./img/social-icons/facebook.svg" alt="facebook" />
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                  <img src="./img/social-icons/instagram.svg" alt="instagram"
+                /></a>
+                <a target="_blank" href="#!">
+                  <img src="./img/social-icons/whatsapp.svg" alt="whatsapp" />
+                </a>
+              </div>
+              <a
+                target="_blank"
+                href="mailto:lirangraf@gmail.com"
+                class="link"
+                data-nav
+                ><span>lirangraf@gmail.com</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio -->
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio__wrapper">
+          <div class="portfolio__title">
+            <h2 class="h2 gradient-border">Портфолио</h2>
+          </div>
+          <div class="preview">
+            <a href="./portfolio.html" target="_blank" class="btn">Смотреть</a>
+          </div>
+        </div>
+        <div class="portfolio__cards">
+          <!-- card 1 -->
+          <a
+            target="_blank"
+            href="https://www.lirangraf.com/forest%20travel%201/main.html"
+            class="portfolio-card"
+            data-aos="flip-left"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <div class="portfolio-card-img">
+              <img src="./img/cards/forest-header.jpg" alt="Forest Travel" />
+              <span class="portfolio-card__view">Смотреть</span>
+            </div>
+            <div class="portfolio__card-description">
+              <p class="h4">Верстка “Форест тревел”</p>
+              <p class="desc">Верстка многостраничного сайта</p>
+            </div>
+          </a>
+          <!-- card 2 -->
+          <a
+            target="_blank"
+            href="https://www.lirangraf.com/Yunit/index.html"
+            class="portfolio-card"
+            data-aos="flip-left"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <div class="portfolio-card-img">
+              <img src="./img/cards/yunit-header.jpg" alt="Юнит" />
+              <span class="portfolio-card__view">Смотреть</span>
+            </div>
+            <div class="portfolio__card-description">
+              <p class="h4">Сайт приложения “Юнит”</p>
+              <p class="desc">Верстка лендинга</p>
+            </div>
+          </a>
+
+          <!-- card 3 -->
+          <a
+            target="_blank"
+            href="#!"
+            class="portfolio-card"
+            data-aos="flip-left"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
+            <div class="portfolio-card-img">
+              <img src="./img/cards/card-1.jpg" alt="Forest Travel" />
+              <span class="portfolio-card__view">Смотреть</span>
+            </div>
+            <div class="portfolio__card-description">
+              <p class="h4">Верстка “Мир Авто”</p>
+              <p class="desc">Верстка многостраничного сайта</p>
+            </div>
+          </a>
+          <!-- card 4 -->
+          <a
+            target="_blank"
+            href="#!"
+            class="portfolio-card"
+            data-aos="flip-left"
+            data-aos-delay="400"
+            data-aos-duration="800"
+          >
+            <div class="portfolio-card-img">
+              <img src="./img/cards/card-2.jpg" alt="Forest Travel" />
+              <span class="portfolio-card__view">Смотреть</span>
+            </div>
+            <div class="portfolio__card-description">
+              <p class="h4">Верстка “Мир Авто”</p>
+              <p class="desc">Верстка многостраничного сайта</p>
+            </div>
+          </a>
+          <!-- card 5 -->
+          <a
+            target="_blank"
+            href="#!"
+            class="portfolio-card"
+            data-aos="flip-left"
+            data-aos-delay="500"
+            data-aos-duration="800"
+          >
+            <div class="portfolio-card-img">
+              <img src="./img/cards/card-3.jpg" alt="Forest Travel" />
+              <span class="portfolio-card__view">Смотреть</span>
+            </div>
+            <div class="portfolio__card-description">
+              <p class="h4">Верстка “Мир Авто”</p>
+              <p class="desc">Верстка многостраничного сайта</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline" id="mywork">
+      <div class="container">
+        <div class="timeline__title-wrapper">
+          <h2 class="h2 gradient-border">Как я работаю</h2>
+        </div>
+        <div class="timeline-wrapper">
+          <!-- item 1 -->
+          <div
+            class="timeline-item"
+            data-aos="zoom-out-right"
+            data-aos-duration="1000"
+          >
+            <div class="h4 gradient-border">Оцениваю макет</div>
+            <p class="lead">
+              Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
+            </p>
+            <span>Время: 2 часа</span>
+          </div>
+          <!-- item 2 -->
+          <div
+            class="timeline-item"
+            data-aos="zoom-out-left"
+            data-aos-duration="1000"
+          >
+            <div class="h4 gradient-border">ТЗ, смета и график работ</div>
+            <p class="lead">
+              Согласовываем техническое задание и график работ по проекту.
+              Осмечиваю стоимость по этапам работы.
+            </p>
+            <span>Время: 2 - 4 часа</span>
+          </div>
+          <!-- item 3 -->
+          <div
+            class="timeline-item"
+            data-aos="zoom-out-right"
+            data-aos-duration="1000"
+          >
+            <div class="h4 gradient-border">Вы держите руку на пульсе</div>
+            <p class="lead">
+              Выдаю клиенту доступ к GitHub репозиторию и доске Trello. Вы в
+              любое время можете видеть актуальное состояние проекта и задач.
+            </p>
+          </div>
+          <!-- item 4 -->
+          <div
+            class="timeline-item"
+            data-aos="zoom-out-left"
+            data-aos-duration="1000"
+          >
+            <div class="h4 gradient-border">Выполняю каждый этап</div>
+            <p class="lead">
+              Поочередно выполняю каждый этап работы. Передаю результаты.
+              Заказчик производит поэтапную оплату.
+            </p>
+          </div>
+          <!-- item 5 -->
+          <div
+            class="timeline-item"
+            data-aos="zoom-out-right"
+            data-aos-duration="1000"
+          >
+            <div class="h4 gradient-border">Финальное ревью проекта</div>
+            <p class="lead">
+              Проект готов. Финальное ревью и полировка до идеального состояния.
+              Передаю файлы проекта, заливаю сайт на хостинг заказчика.
+            </p>
+            <span>Время: 2 - 4 часа</span>
+          </div>
+        </div>
+        <!-- contacts -->
+        <div class="parallax-scene">
+          <div class="contacts__title">
+            <h2 class="h2 gradient-border" id="contacts">Контакты</h2>
+          </div>
+          <p
+            class="desc desc-before"
+            data-aos="zoom-in-right"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            Если вы ищите специалиста по верстке сайтов или frontend
+            разработчика в команду для работы над проектом — напишите мне.
+          </p>
+          <div
+            class="contacts__descraibe"
+            data-aos="zoom-in-left"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div class="contacts__descraibe-contacts">
+              <ul>
+                <li>
+                  <span class="contact">Email</span>
+                  <a
+                    target="_blank"
+                    href="mailto:lirangraf@gmail.com"
+                    class="link"
+                    data-nav
+                    ><span>lirangraf@gmail.com</span></a
+                  >
+                </li>
+                <li>
+                  <span class="contact">Телефон</span
+                  ><a
+                    target="_blank"
+                    href="tel:+972545993353"
+                    class="link"
+                    data-nav
+                    ><span>+972-54-599-33-53</span></a
+                  >
+                </li>
+              </ul>
+              <div class="social-wrapper">
+                <a target="_blank" href="https://web.telegram.org/k/">
+                  <img src="./img/social-icons/telegram.svg" alt="telegram" />
+                </a>
+                <a target="_blank" href="https://vk.com/id223199623">
+                  <img src="./img/social-icons/vk.svg" alt="vk" />
+                </a>
+                <a target="_blank" href="https://www.facebook.com/">
+                  <img src="./img/social-icons/facebook.svg" alt="facebook" />
+                </a>
+                <a target="_blank" href="https://www.instagram.com/">
+                  <img src="./img/social-icons/instagram.svg" alt="instagram"
+                /></a>
+                <a target="_blank" href="#!">
+                  <img src="./img/social-icons/whatsapp.svg" alt="whatsapp" />
+                </a>
+              </div>
+            </div>
+            <div
+              class="contacts__descraibe-offer"
+              data-aos="zoom-in-right"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+            >
+              <p class="desc desc-after">
+                Если вы ищите специалиста по верстке сайтов или frontend
+                разработчика в команду для работы над проектом —
+                <a class="link" href="./contacts.html">напишите мне.</a>
+              </p>
+              <img
+                class="parallax"
+                src="./img/bg-contacts/contacts-bg.png"
+                alt="contacts-bg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <p class="footer__content-copywriter">
+            &#169;2023 — Liran Pertzovsky
+          </p>
+          <p class="footer__content-desc">
+            Веб-разработчик из Израиля, занимаюсь версткой и созданием
+            сайтов.<br />
+            Этот сайт сделал в рамках прохождения обучения по верстке на курсах
+            от
+            <a target="_blank" href="https://webcademy.ru/"
+              ><span>WebCademy.ru</span></a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- библиотека jquery-->
+    <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="./libs/jquery/jquery.validate.min.js"></script>
+    <!-- скрипт бибилиотеки AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- //скрипт бибилиотеки AOS -->
+    <!-- инициализация скрипта AOS -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- //инициализация скрипта AOS -->
+
+    <!-- my script-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

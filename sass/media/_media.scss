@@ -1,0 +1,19 @@
+// tablet big media*/
+@media (max-width: 1139px) {
+  .container {
+    width: 900px;
+  }
+}
+// tablet media*/
+@media (max-width: 899px) {
+  .container {
+    width: 768px;
+  }
+}
+
+// mobile media*/
+@media (max-width: 767px) {
+  .container {
+    width: 320px;
+  }
+}

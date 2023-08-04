@@ -1,0 +1,86 @@
+//размеры самого контейнера с иконкой меню с крестиком
+
+$width: 40px;
+$height: 30px;
+$color: #000;
+
+//размеры средней линии иконки
+$lineWidth: 40px;
+$lineHeight: 5px;
+
+.nav-icon {
+  width: $width;
+  height: $height;
+
+  top: 30px;
+  right: 15px;
+  z-index: 99;
+  top: 30px;
+  transition: 0.5s;
+
+  display: none;
+  // tablet media*/
+  @media (max-width: 899px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.nav-icon.nav-icon--active:hover {
+  transform: rotate(180deg);
+}
+
+.nav-icon__middle {
+  display: none;
+
+  position: relative;
+  width: $lineWidth;
+  height: $lineHeight;
+
+  background-color: $color;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: $lineWidth;
+    height: $lineHeight;
+    left: 0;
+
+    background-color: $color;
+  }
+
+  &::before {
+    top: -($lineHeight * 2);
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+
+  &::after {
+    bottom: -($lineHeight * 2);
+    transition: transform 0.2s ease-in, bottom 0.2s linear 0.2s;
+  }
+  // tablet media*/
+  @media (max-width: 899px) {
+    display: block;
+  }
+}
+
+/*active state*/
+.nav-icon.nav-icon--active .nav-icon__middle {
+  background-color: transparent;
+
+  &::before {
+    transform: rotate(45deg);
+    top: 0;
+
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+
+    transition: bottom 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+}

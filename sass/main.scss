@@ -1,0 +1,32 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+
+// Blocks
+
+@import "./blocks/header-nav";
+@import "./blocks/header-nav-icon";
+@import "./blocks/nav";
+@import "./blocks/ln-github";
+@import "./blocks/social-icons";
+@import "./blocks/main-content";
+@import "./blocks/main-btn";
+@import "./blocks/main-skills";
+@import "./blocks/link";
+@import "./blocks/text";
+@import "./blocks/underline";
+@import "./blocks/titles-subtitles";
+@import "./blocks/cards";
+@import "./blocks/contacts-out";
+
+//Section
+@import "./section/header";
+@import "./section/main";
+@import "./section/portfilio";
+@import "./section/timeline";
+@import "./section/contacts";
+@import "./section/footer";
+
+//media
+@import "./media/media";

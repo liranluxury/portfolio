@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- encoding -->
+    <meta charset="UTF-8" />
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and SEO -->
+    <title>Portfolio Liran Pertzovsky</title>
+    <meta name="description" content="Portfolio Liran Pertzovsky" />
+    <meta name="keywords" content="ключевые слова, фразы" />
+
+    <!-- анимация - библиотека AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- https://fancyapps.com/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Open Graph -->
+    <!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="web-layout, frontend, Liran Pertzovsky"
+    />
+    <meta
+      property="og:description"
+      content="web-layout, frontend, Liran Pertzovsky"
+    />
+    <meta property="og:image" content="./img/opengraph.jpg" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./img/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="./img/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- ********************************************************** -->
+  </head>
+  <body>
+    <header class="header">
+      <!-- Навигация -->
+      <div class="container">
+        <div class="header__wrapper">
+          <p>HTML Верстальщик</p>
+          <!-- //mobile btn -->
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li>
+                <a data-nav href="./index.html"><span>Главная</span></a>
+              </li>
+              <li>
+                <a data-nav href="./portfolio.html"><span>Портфолио</span></a>
+              </li>
+
+              <li>
+                <a data-nav href="./contacts.html"><span>Контакты</span></a>
+              </li>
+            </ul>
+          </nav>
+
+          <div
+            class="header__icon"
+            data-aos="flip-left"
+            data-aos-delay="650"
+            data-aos-duration="1000"
+          >
+            <a target="_blank" href="#!">
+              <svg class="svg-ln">
+                <use href="./img/svgSprite.svg#svg-ln"></use>
+              </svg>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/liranluxury?tab=repositories"
+            >
+              <svg class="svg-github">
+                <use href="./img/svgSprite.svg#svg-github"></use>
+              </svg>
+            </a>
+          </div>
+          <!-- вылетающий список меню -->
+          <div class="header-menu-mobile">
+            <div class="header-menu-mobile__bg"></div>
+            <!-- mobile btn -->
+            <button class="nav-icon">
+              <span class="nav-icon__middle"></span>
+            </button>
+            <!-- Навигация -->
+
+            <nav class="nav">
+              <ul class="nav-list">
+                <li>
+                  <a data-nav href="./index.html"><span>Главная</span></a>
+                </li>
+                <li>
+                  <a data-nav href="./portfolio.html"><span>Портфолио</span></a>
+                </li>
+
+                <li>
+                  <a data-nav href="./contacts.html"><span>Контакты</span></a>
+                </li>
+              </ul>
+              <!-- //Навигация -->
+              <div class="nav-mobile-wrapper">
+                <div class="social-wrapper">
+                  <a target="_blank" href="https://web.telegram.org/k/">
+                    <img src="./img/social-icons/telegram.svg" alt="telegram" />
+                  </a>
+                  <a target="_blank" href="https://vk.com/id223199623">
+                    <img src="./img/social-icons/vk.svg" alt="vk" />
+                  </a>
+                  <a target="_blank" href="https://www.facebook.com/">
+                    <img src="./img/social-icons/facebook.svg" alt="facebook" />
+                  </a>
+                  <a target="_blank" href="https://www.instagram.com/">
+                    <img src="./img/social-icons/instagram.svg" alt="instagram"
+                  /></a>
+                  <a target="_blank" href="#!">
+                    <img src="./img/social-icons/whatsapp.svg" alt="whatsapp" />
+                  </a>
+                </div>
+                <!-- //социальный блок -->
+                <a
+                  target="_blank"
+                  href="mailto:lirangraf@gmail.com"
+                  class="link"
+                  data-link
+                  ><span>lirangraf@gmail.com</span></a
+                >
+              </div>
+              <!-- социальный блок -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="portfolio">
+      <div class="container">
+        <div class="portfolio__title">
+          <h2 class="h2 gradient-border">Портфолио</h2>
+        </div>
+        <div class="mix-blok">
+          <!-- блок переключателей -->
+          <div class="mix-blok__btn">
+            <button type="button" data-filter="all">Все</button>
+            <button type="button" data-filter=".html">HTML</button>
+            <button type="button" data-filter=".wp">WORDPRESS</button>
+          </div>
+          <div class="portfolio__cards" id="mix-cards">
+            <!-- card 1 -->
+            <div class="portfolio-card mix html">
+              <a
+                target="_blank"
+                href="https://www.lirangraf.com/forest%20travel%201/main.html"
+                class="portfolio-card-img"
+              >
+                <img src="./img/cards/forest-header.jpg" alt="Forest Travel" />
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="./img/projects/forest.jpg" class="h4"
+                  >Верстка “Форест тревел”</a
+                >
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="portfolio-card mix html">
+              <a
+                target="_blank"
+                href="https://www.lirangraf.com/Yunit/index.html"
+                class="portfolio-card-img"
+              >
+                <img src="./img/cards/yunit-header.jpg" alt="Юнит" />
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="./img/projects/yunit.jpg" class="h4"
+                  >Сайт приложения “Юнит”</a
+                >
+                <p class="desc">Верстка лендинга</p>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="portfolio-card mix html">
+              <a target="_blank" href="#!" class="portfolio-card-img">
+                <div class="card-img-wrapper">
+                  <img src="./img/cards/card-1.jpg" alt="Forest Travel" />
+                </div>
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="#!" class="h4">Верстка “Мир Авто”</a>
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+            <!-- card 4 -->
+            <div class="portfolio-card mix wp">
+              <a target="_blank" href="#!" class="portfolio-card-img">
+                <div class="card-img-wrapper">
+                  <img src="./img/cards/card-2.jpg" alt="Forest Travel" />
+                </div>
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="#!" class="h4">Верстка “Мир Авто”</a>
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+            <!-- card 5 -->
+            <div class="portfolio-card mix html wp">
+              <a target="_blank" href="#!" class="portfolio-card-img">
+                <div class="card-img-wrapper">
+                  <img src="./img/cards/card-3.jpg" alt="Forest Travel" />
+                </div>
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="#!" class="h4">Верстка “Мир Авто”</a>
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="portfolio-card mix html wp">
+              <a target="_blank" href="#!" class="portfolio-card-img">
+                <div class="card-img-wrapper">
+                  <img src="./img/cards/card-4.jpg" alt="Forest Travel" />
+                </div>
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="#!" class="h4">Верстка “Мир Авто”</a>
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+            <!-- card 7 -->
+            <div class="portfolio-card mix html wp">
+              <a target="_blank" href="#!" class="portfolio-card-img">
+                <div class="card-img-wrapper">
+                  <img src="./img/cards/card-5.jpg" alt="Forest Travel" />
+                </div>
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="#!" class="h4">Верстка “Мир Авто”</a>
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+            <!-- card 8 -->
+            <div class="portfolio-card mix html wp">
+              <a target="_blank" href="#!" class="portfolio-card-img">
+                <div class="card-img-wrapper">
+                  <img src="./img/cards/card-6.jpg" alt="Forest Travel" />
+                </div>
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="#!" class="h4">Верстка “Мир Авто”</a>
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+            <!-- card 9 -->
+            <div class="portfolio-card mix html wp">
+              <a target="_blank" href="#!" class="portfolio-card-img">
+                <div class="card-img-wrapper">
+                  <img src="./img/cards/card-7.jpg" alt="Forest Travel" />
+                </div>
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="#!" class="h4">Верстка “Мир Авто”</a>
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+            <!-- card 10 -->
+            <div class="portfolio-card mix html wp">
+              <a target="_blank" href="#!" class="portfolio-card-img">
+                <div class="card-img-wrapper">
+                  <img src="./img/cards/card-8.jpg" alt="Forest Travel" />
+                </div>
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="#!" class="h4">Верстка “Мир Авто”</a>
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+            <!-- card 11 -->
+            <div class="portfolio-card mix html wp">
+              <a target="_blank" href="#!" class="portfolio-card-img">
+                <div class="card-img-wrapper">
+                  <img src="./img/cards/card-9.jpg" alt="Forest Travel" />
+                </div>
+                <span class="portfolio-card__view">Смотреть</span>
+              </a>
+              <div class="portfolio__card-description">
+                <a data-fancybox href="#!" class="h4">Верстка “Мир Авто”</a>
+                <p class="desc">Верстка многостраничного сайта</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <p class="footer__content-copywriter">
+            &#169;2023 — Liran Pertzovsky
+          </p>
+          <p class="footer__content-desc">
+            Веб-разработчик из Израиля, занимаюсь версткой и созданием
+            сайтов.<br />
+            Этот сайт сделал в рамках прохождения обучения по верстке на курсах
+            от
+            <a target="_blank" href="https://webcademy.ru/"
+              ><span>WebCademy.ru</span></a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- библиотека jquery-->
+    <script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+    <script src="./libs/jquery/jquery.validate.min.js"></script>
+    <!-- скрипт бибилиотеки AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- //скрипт бибилиотеки AOS -->
+    <!-- инициализация скрипта AOS -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- //инициализация скрипта AOS -->
+
+    <!-- библиотека fansyapps-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <!-- библиотека mixitup-->
+    <script src="./libs/mixitup/mixitup.min.js"></script>
+    <script>
+      let containerEl = document.querySelector("#mix-cards");
+      let mixer = mixitup(containerEl);
+      Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+      // form validate
+    </script>
+
+    <!-- my script-->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

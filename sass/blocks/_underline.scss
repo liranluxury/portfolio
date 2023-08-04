@@ -1,0 +1,44 @@
+.gradient-border {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center bottom 15px;
+  background-size: 100% 12px;
+  background-image: linear-gradient(to right, $accent-color, $accent-color);
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    background-position: center bottom 10px;
+    background-size: 100% 10px;
+  }
+  // tablet media*/
+  @media (max-width: 899px) {
+    background-position: center bottom 7px;
+    background-size: 100% 8px;
+  }
+  // mobile media*/
+  @media (max-width: 767px) {
+    background-position: center bottom 4px;
+  }
+}
+
+.h2.gradient-border {
+  background-position: center bottom 9px;
+  background-size: 100% 8px;
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    background-position: center bottom 7px;
+  }
+  // tablet media*/
+  @media (max-width: 899px) {
+    background-position: center bottom 4px;
+  }
+}
+
+.h4.gradient-border {
+  font-weight: 700;
+  background-position: center bottom 3px;
+  background-size: 100% 6px;
+  // tablet media*/
+  @media (max-width: 899px) {
+    background-position: center bottom 2px;
+  }
+}

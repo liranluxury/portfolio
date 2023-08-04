@@ -1,0 +1,33 @@
+.main {
+  overflow: hidden;
+  padding-top: 30px;
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    padding-top: 13px;
+  }
+  // tablet media*/
+  @media (max-width: 899px) {
+    padding-top: 10px;
+  }
+}
+.main__baner {
+  position: relative;
+  z-index: -1;
+  max-width: 1440px;
+  margin: -131px auto 0;
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    margin: -110px auto 0;
+  }
+
+  // tablet media*/
+  @media (max-width: 899px) {
+    margin: -130px auto 0;
+  }
+
+  // mobile media*/
+  @media (max-width: 767px) {
+    width: 300px;
+    margin: -10px auto 50px;
+  }
+}

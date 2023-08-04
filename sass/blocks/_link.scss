@@ -1,0 +1,49 @@
+.link {
+  color: #1a71d2;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3;
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    font-size: 18px;
+  }
+  // tablet media*/
+  @media (max-width: 899px) {
+    font-size: 18px;
+  }
+}
+//подчеркивание при ховере линка/
+[data-link]:hover,
+[data-nav]:hover {
+  transition: 0.2s ease-in;
+}
+[data-link]:active,
+[data-nav]:active {
+  top: 2px;
+}
+[data-link],
+[data-nav] {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 8px;
+    background-color: $accent-color;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  @media (max-width: 899px) {
+    &::after {
+      height: 5px;
+      bottom: 1px;
+    }
+  }
+}

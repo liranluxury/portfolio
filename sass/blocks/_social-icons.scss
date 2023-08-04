@@ -1,0 +1,25 @@
+.svg-facebook,
+.svg-instagram,
+.svg-telegram,
+.svg-whatsapp,
+.svg-vk {
+  width: 48px;
+  height: 48px;
+}
+.social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    width: 320px;
+  }
+  // tablet media*/
+  @media (max-width: 899px) {
+    width: 270px;
+    & a {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}

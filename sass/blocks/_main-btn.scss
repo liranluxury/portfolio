@@ -1,0 +1,52 @@
+.btn {
+  display: inline-block;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 19px 40px;
+  background: #fbdc4d;
+
+  border-radius: 50px;
+  transition: 0.5s; //плавный переход/
+
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    padding: 16px 26px;
+  }
+  // tablet media*/
+  @media (max-width: 899px) {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.06); //кнопка вырастает!!
+}
+
+.btn:active {
+  position: relative;
+  top: 2px;
+}
+
+.btn--light {
+  background: #eff7fc;
+}
+
+.btn-wrapper {
+  margin-top: 30px;
+  display: flex;
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    margin-top: 28px;
+  }
+  // tablet media*/
+  @media (max-width: 899px) {
+    display: none;
+  }
+}
+
+.btn-wrapper > * + * {
+  margin-left: 20px;
+}

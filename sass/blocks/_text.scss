@@ -1,0 +1,35 @@
+.text,
+.desc,
+.lead {
+  font-weight: 400;
+}
+.text {
+  font-size: 22px;
+  line-height: 1.6;
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    font-size: 18px;
+  }
+  // tablet media*/
+  @media (max-width: 899px) {
+    font-size: 16px;
+  }
+}
+.desc {
+  font-size: 18px;
+  line-height: 1.6;
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    font-size: 14px;
+  }
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 8px 0;
+  // tablet big media*/
+  @media (max-width: 1139px) {
+    font-size: 14px;
+  }
+}
